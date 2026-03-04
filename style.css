@@ -84,8 +84,77 @@ ul {
 }
 
 /* deco!!! DINO!!!! */
+.dinos {
+    position: relative;
+    margin-top: 2rem;
+    height: 150px; /* Space for the dinosaurs */
+    overflow: visible;
+}
 
+.dino-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.dino-petro {
+    width: 120px;
+    position: absolute;
+    top: -350px; /* Moves it up near the profile */
+    right: -50px;
+    transform: rotate(-15deg);
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+.dino-tarpy {
+    width: 120px;
+    position: absolute;
+    top: -380px;
+    left: -65px;
+    transform: rotate(-25deg);
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+.dino-spino {
+    width: 180px;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    transition: transform 0.5s ease;
+}
+
+.dino-spino:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.dino-comsy {
+    width: 100px;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    transition: transform 0.5s ease;
+}
+.dino-comsy:hover {
+    transform: scale(1.3);
+}
+
+.dino-snake {
+    width: 180px;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    transition: transform 0.5s ease;
+}
+.dino-snake:hover {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+/* .deco-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 8px;
+    opacity: 0.6;
+    filter: grayscale(30%);
+} */
 
 /* Footer */
 footer {
