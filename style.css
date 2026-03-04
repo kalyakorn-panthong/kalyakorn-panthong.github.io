@@ -1,0 +1,100 @@
+:root {
+    --bg-color: #344732;
+    --card-bg: #608d60;
+    --text-main: #ffffff;
+    --text-muted: #b7b7b7;
+    --accent: #5bf838;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    border: 1px solid #334155;
+}
+
+.mini-logo {
+    width: 20px;
+    margin-right: 8px;
+}
+
+/* Cards Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.school-logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.muted {
+    color: var(--text-muted);
+}
+
+/* deco!!! DINO!!!! */
+
+
+
+/* Footer */
+footer {
+    margin-top: 4rem;
+}
+
+.quote {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 300;
+}
+
