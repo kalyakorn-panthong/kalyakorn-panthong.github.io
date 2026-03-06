@@ -24,7 +24,7 @@
         <section class="info-grid">
             <div class="card">
                 <h3>School</h3>
-                <img src="images/school logo.jpg" alt="Plookpanya Logo" class="school-logo">
+                <a href="https://www.plookpanya.ac.th/en/" target="_blank"><img src="images/school logo.jpg" alt="Plookpanya Logo" class="school-logo"></a>
                 <p><strong>Plookpanya High School</strong></p>
                 <p>Grade 10</p>
             </div>
@@ -42,14 +42,46 @@
                 <p class="muted">None</p>
             </div>
         </section>
+        
+        <!-- DinoS!!! YAY!! -->
         <section class="dinos">
             <div class="dino-container">
                 <img src="images/petro.png" alt="flying reptile" class="dino-petro">
                 <img src="images/tapejara.png" alt="big flying reptile" class="dino-tarpy">
                 
-                <img src="images/spino.png" alt="spinosaurus" class="dino-spino">
-                <img src="images/comsy.png" alt="compsognathus" class="dino-comsy">
-                <img src="images/bigsnake.png" alt="titanoboa" class="dino-snake">
+                <img id="spino" src="images/spino.png" 
+                    alt="spinosaurus" 
+                    class="dino-spino"
+                    onclick="run()">
+                <!-- <img id="comsypack" src="images/comsy.png" alt="compsognathus" class="dino-comsy"> -->
+                <img id="comsypack" 
+                    src="images/comsy.png" 
+                    
+                    alt="compsognathus" 
+                    class="dino-comsy" 
+                    onclick="startDinoRain(), startDinoRise()">
+                    <!-- onclick="startDinoRise()"> -->
+                <!-- onclick="duplicateimage()"> -->
+                
+                <!-- <img id="clicksnake" src="images/bigsnake.png" alt="titanoboa" class="dino-snake"
+                onclick="document.getElementById('clicksnake');src='images/bigsnakehissing.png'"
+                > -->
+                <img id="clicksnake" 
+                    src="images/bigsnake.png" 
+                    alt="titanoboa" 
+                    class="dino-snake" 
+                    onclick="snakeHiss()">
+
+                <img id="comsypack2" src="images/comsy2.png" alt="comsylego or something" class="dino-lego-comsy">
+                
+                <!-- <img id="mosy" src="images/mosy.png"
+                    alt="mosasaurus" class="dino-water"> -->
+
+                <img id="mosy" 
+                    src="images/mosy_swiming.png" 
+                    alt="mosasaurus" 
+                    class="dino-water" 
+                    onclick="swim()">
                 <!-- <img src="images/petro.png" alt="peter 2" class="deco-pic"> -->
                 <!-- <img src="images/spino.png" alt="spino 2" class="deco-pic"> -->
             </div>
@@ -60,6 +92,6 @@
         </footer>
     </main>
 
-    <script src="script.js"></script>
+    <script src="java.js"></script>
 </body>
 </html>

@@ -78,6 +78,10 @@ ul {
     padding: 0;
     text-align: left;
 }
+.school-logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
 
 .muted {
     color: var(--text-muted);
@@ -147,6 +151,72 @@ ul {
     transform: scale(1.1) rotate(-5deg);
 }
 
+.dino-lego-comsy{
+    position: absolute;
+    
+    /* top: 5px; */
+    width: 1px;
+    opacity: 0;
+    /* left: auto; */
+}
+/* COMSY RAIN!!!! */
+/* The falling animation!! YAY!! */
+@keyframes fall {
+    0% {
+        top: 0px; /* Start above the screen */
+        opacity: 1;
+    }
+    100% {
+        top: 110vh; /* Fall past the bottom */
+        opacity: 0.5;
+    }
+}
+
+.falling-dino {
+    position: fixed;
+    width: 50px; /* Adjust size of the "raindrops" */
+    pointer-events: none; /* So they don't block clicks even tho it would be kinda funny if they do LOL */
+    z-index: -9999;
+    animation: fall 3s linear forwards;
+}
+
+
+
+
+/* reverse 1999 ahh comsy rain */
+.rising-dino {
+    position: fixed;
+    width: 60px; /* Size of the rising dinos */
+    z-index: -9999;
+    pointer-events: none;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1; /* Fade in quickly as they appear */
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        /* Move up 120% of the screen height and add a little tilt */
+        transform: translateY(-120vh) rotate(20deg);
+        opacity: 0; /* Fade out as they exit the top */
+    }
+}
+
+/* .dino-snake:active { */
+    /* display: ; */
+    /* background-image: url(images/bigsnakehissing.png); */
+    /* background-size: cover; */
+    /* background-position: center; */
+/* } */
+
 /* .deco-pic {
     width: 50px;
     height: 50px;
@@ -155,6 +225,27 @@ ul {
     opacity: 0.6;
     filter: grayscale(30%);
 } */
+
+/* mosy swimming!
+.dino-water {
+    position: fixed;
+    width: 150px;
+    transition: all 2s ease-in-out; /* Makes the move smooth */
+    /* z-index: 100; */
+    /* opacity: 0.5; */
+    /* cursor: pointer; */
+/* } */
+
+.dino-water {
+    position: fixed;
+    width: 150px;
+    /* transition must include 'transform' for smooth flipping */
+    transition: left 2s ease-in-out, top 2s ease-in-out, transform 0.5s ease-in-out; 
+    z-index: -2;
+    cursor: pointer;
+}
+
+
 
 /* Footer */
 footer {
